@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" media="screen" />
+    <title>John Doe website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body class="offer-page">
+    <section>
+        <div id="main-background">
+            <div class="topnav" id="myTopnav">
+                <a class="offer-link" href="/index.html">M A I N</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div id="main">
+                <h1>John Doe</h1>
+                <h2 id="h2">Python Developer, PhD in Physics</h2>
+                <button class="button">
+                    <a href="#contact">Reach out</a>
+                </button>
+            </div>
+            <div id="quote">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><i>Lorem Ipsum</i></p>
+            </div>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </section>
+
+    <!-- OFFER SECTIONS -->
+
+    <section id="expertise" class="offer-section">
+        <div class="container">
+            <h2>Expertise</h2>
+            <div class="section-content">
+                <div class="expertise-grid">
+
+                    <div class="expertise-item white-tile">
+                        <i class="fa fa-line-chart expertise-icon"></i>
+                        <h3>Lorem ipsum</h3>
+                        <p>Nullam a lectus vel orci finibus pharetra. Nulla pretium, metus sit amet rhoncus egestas,
+                            lorem nisi tristique neque,
+                            sed laoreet odio elit semper lectus.
+                        </p>
+                    </div>
+
+                    <div class="expertise-item white-tile">
+                        <i class="fa fa-cogs expertise-icon"></i>
+                        <h3>Lorem ipsum</h3>
+                        <p>Aliquam vel placerat ante. Curabitur nec velit interdum, viverra ipsum ut, finibus diam.
+                        </p>
+                    </div>
+
+                    <div class="expertise-item white-tile">
+                        <i class="fa fa-database expertise-icon"></i>
+                        <h3>Lorem ipsum</h3>
+                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                    </div>
+
+                    <div class="expertise-item white-tile">
+                        <i class="fa fa-star-o expertise-icon"></i>
+                        <h3>Lorem ipsum</h3>
+                        <p>Nunc a urna quis nisi pulvinar aliquet. Nam elit turpis, posuere quis fringilla volutpat,
+                            convallis a nibh. Praesent non
+                            risus sed turpis luctus pulvinar finibus eget justo.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="expertise-description">
+                    Sed posuere varius lorem ut feugiat. Vivamus scelerisque ante ante, eu fringilla mauris scelerisque
+                    in. Etiam imperdiet,
+                    eros eu vulputate condimentum, risus ipsum luctus risus, quis eleifend purus enim eu nisl. Sed vitae
+                    lacus eget ante suscipit blandit in sit amet dui. Duis id sagittis eros, quis luctus felis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="offer-section">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="section-content">
+                <div class="services-wrapper">
+
+                    <div class="services-column">
+                        <h3 class="services-title">Lorem ipsum 1</h3>
+                        <ul class="services-list">
+                            <li><i class="fa fa-user service-icon"></i> Nam imperdiet, dui ac luctus rutrum, turpis
+                                velit maximus quam, ut auctor massa massa eget neque.
+                            </li>
+                            <li><i class="fa fa-lightbulb-o service-icon"></i> Sed sodales sodales porttitor.</li>
+                            <li><i class="fa fa-flask service-icon"></i> Sed euismod eleifend nisi, eget tincidunt justo
+                                posuere ac.</li>
+                            <li><i class="fa fa-pencil service-icon"></i> Maecenas dignissim malesuada magna sit amet
+                                tincidunt. Nunc et enim a turpis aliquet ultrices.</li>
+                        </ul>
+                    </div>
+
+                    <div class="services-column">
+                        <h3 class="services-title">Lorem ipsum 2</h3>
+                        <ul class="services-list">
+                            <li><i class="fa fa-industry service-icon"></i> Curabitur felis est, scelerisque eu urna
+                                quis, feugiat euismod lacus.</li>
+                            <li><i class="fa fa-cogs service-icon"></i> In et lacinia neque, sit amet sollicitudin
+                                augue.</li>
+                            <li><i class="fa fa-bar-chart service-icon"></i> Morbi placerat mattis velit, sit amet
+                                tincidunt velit.
+                            </li>
+                            <li><i class="fa fa-check-square-o service-icon"></i> Curabitur suscipit vestibulum leo,
+                                placerat vulputate lacus posuere eu.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="offer-section">
+        <div class="container">
+            <h2>Process</h2>
+            <div class="section-content">
+                <div class="timeline">
+
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fa fa-search"></i></div>
+                        <h3>1. Sed mollis interdum molestie. Vivamus volutpat ligula eu nunc scelerisque tempus.</p>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fa fa-lightbulb-o"></i></div>
+                        <h3>2. Etiam dui velit, vestibulum id pretium id, laoreet eu quam. Proin rutrum pretium justo ut
+                            dictum.</p>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fa fa-flask"></i></div>
+                        <h3>3. Duis vitae turpis in dolor posuere interdum. Quisque et lectus sodales, blandit ex non,
+                            cursus elit.</p>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fa fa-bar-chart"></i></div>
+                        <h3>4. Nullam posuere lorem nulla, eu ultricies dolor interdum nec. Nunc egestas mauris metus,
+                            at venenatis mauris ornare vel.</p>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fa fa-pencil-square-o"></i></div>
+                        <h3>5. Sed quis lacus a sem rutrum finibus. Nam sit amet rutrum tellus.</p>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fa fa-handshake-o"></i></div>
+                        <h3>6. Quisque ac elit non ex dignissim feugiat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="offer-section">
+        <div class="container">
+            <h2>Philosophy</h2>
+            <div class="section-content philosophy-grid">
+
+                <div class="philosophy-item">
+                    <i class="fa fa-bullseye philosophy-icon"></i>
+                    <h3>Lorem</h3>
+                    <p>Pellentesque id pulvinar diam. Aliquam nisi nisi, mollis id sagittis vel, consequat sodales sem.
+                    </p>
+                </div>
+
+                <div class="philosophy-item">
+                    <i class="fa fa-eye philosophy-icon"></i>
+                    <h3>Ipsum</h3>
+                    <p>Donec bibendum lorem metus, nec tempus orci accumsan ut. Curabitur sit amet condimentum ex.</p>
+                </div>
+
+                <div class="philosophy-item">
+                    <i class="fa fa-handshake-o philosophy-icon"></i>
+                    <h3>Lorem</h3>
+                    <p>Quisque vitae purus quis magna venenatis rutrum cursus eu nibh.
+                    </p>
+                </div>
+            </div>
+            <blockquote class="philosophy-quote">
+                “Nunc aliquet at nulla a mattis. Suspendisse vel erat ut urna venenatis euismod.” — Lorem Ipsum
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="pricing" class="offer-section">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="section-content">
+
+                <div class="pricing-group">
+                    <h3 class="pricing-title">Lorem</h3>
+                    <ul class="pricing-list">
+                        <li>
+                            <span><i class="fa fa-comments-o"></i> Donec mollis (60 min)</span>
+                            <strong>€40</strong>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-pencil"></i> Non quam</span>
+                            <strong>€25 / page</strong>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-flask"></i> Id placerat</span>
+                            <strong>€30 / hour</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing-group">
+                    <h3 class="pricing-title">Ipsum</h3>
+                    <ul class="pricing-list">
+                        <li>
+                            <span><i class="fa fa-industry"></i> Pellentesque</span>
+                            <strong>€60 / hour</strong>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-cogs"></i> A ultrices</span>
+                            <strong>€80 / hour</strong>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-bar-chart"></i> Turpis</span>
+                            <strong>€70 / hour</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="pricing-note">
+                    Duis non fringilla libero, vel pellentesque libero. Vivamus ultrices ipsum ut ultricies consectetur.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="offer-section">
+        <div class="container">
+            <h2>FAQ</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Curabitur eu tortor et sapien malesuada gravida ut dignissim metus?
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Integer nec metus posuere, ornare nunc ut, mattis orci. Suspendisse dolor odio, interdum sed
+                        sapien sed, tristique
+                        suscipit tortor. Aliquam vitae fermentum justo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Nulla urna est, mattis in ex et, blandit commodo dui?
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Pellentesque ligula sem, viverra in lectus eget, facilisis auctor justo. Donec ornare accumsan
+                        tellus, et vehicula neque
+                        pretium nec.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Maecenas dignissim, est quis facilisis elementum, felis risus varius turpis, at commodo diam diam in
+                    lacus?
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Duis et est venenatis, faucibus ipsum sit amet, sagittis enim. Ut bibendum erat ac fringilla
+                        ultricies. Sed ullamcorper
+                        cursus elit, eu ornare enim posuere eget. Suspendisse magna metus, pellentesque in eleifend id,
+                        bibendum a leo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Praesent felis tellus, ultrices et mollis non, tincidunt id metus?
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Vivamus ac dolor sodales, tempor libero quis, tempor nulla.
+
+                        Vivamus et feugiat turpis. Proin sed felis ut risus aliquet volutpat. Class aptent taciti
+                        sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="testimonials" class="offer-section">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="section-content testimonials-grid">
+
+                <div class="testimonial-item">
+                    <p class="testimonial-text">
+                        “Phasellus eu tellus et dolor lacinia ultricies et a risus. Orci varius natoque penatibus et
+                        magnis dis parturient
+                        montes, nascetur ridiculus mus.”
+                    </p>
+                    <div class="testimonial-author">— Aliquam Erat Volutpat.</div>
+                </div>
+
+                <div class="testimonial-item">
+                    <p class="testimonial-text">
+                        “Duis viverra, sem sed aliquet fringilla, leo quam aliquam ex, ut bibendum justo neque at neque.
+                        Etiam suscipit quis
+                        sapien.”
+                    </p>
+                    <div class="testimonial-author">— Eget Ultricies</div>
+                </div>
+
+                <div class="testimonial-item">
+                    <p class="testimonial-text">
+                        “Cras ornare leo tempor nibh aliquam malesuada. Nunc bibendum ex ex, a hendrerit nisl.”
+                    </p>
+                    <div class="testimonial-author">— Laoreet At</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <section id="contact">
+            <div class="container footer">
+                <div class="side-menu">
+                    <ul>
+                        <li><a class="offer-link" href="/index.html">M A I N</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#philosophy">Philosophy</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 id="contact">John Doe</h3>
+                    <a id="mail" href="mailto:john.doe@mail.com">CONTACT ME</a>
+                    <h5>john.doe@mail.com</h5>
+
+                    <div class="buttons">
+                        <button class="button">
+                            <a href="https://www.linkedin.com/">
+                                LinkedIn</a>
+                        </button>
+
+                        <button class="button">
+                            <a href="https://www.researchgate.net/">Researchgate</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">© 2026 CodingwithLucy. All rights reserved.</p>
+            <p id="footer-link">Graphics generated in Canva Pro or my own.
+            </p>
+        </section>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("myTopnav");
+            nav.classList.toggle("responsive");
+        }
+
+        document.addEventListener("click", function (event) {
+            const nav = document.getElementById("myTopnav");
+            const isClickInside = nav.contains(event.target);
+
+            if (!isClickInside && nav.classList.contains("responsive")) {
+                nav.classList.remove("responsive");
+            }
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll(".faq-item").forEach(item => {
+            item.querySelector(".faq-question").addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

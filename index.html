@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" media="screen" />
+  <title>John Doe website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <section>
+    <div id="main-background">
+      <div class="topnav" id="myTopnav">
+        <a href="#about-me">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+        <a class="offer-link" href="/offer.html">O F F E R</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div id="main">
+        <h1>John Doe</h1>
+        <h2 id="h2">Python Developer, PhD in Physics</h2>
+        <button class="button">
+          <a href="#contact">Reach out</a>
+        </button>
+      </div>
+      <div id="quote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p><i>Lorem Ipsum</i></p>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div>
+        <h3>Who I am?</h3>
+        <h2>ABOUT ME</h2>
+      </div>
+      <div class="container-about">
+        <div class="container-about-photo">
+          <img class="photo desktop-photo" src="./photo.png" alt="Photo of candidate" />
+          <img class="photo mobile-photo" src="./photomob.png" alt="Photo of candidate" />
+        </div>
+        <div class="container-about-note">
+          <p class="about-note">
+            Nullam a lectus vel orci finibus pharetra. Nulla pretium, metus sit amet rhoncus egestas, lorem nisi
+            tristique neque,
+            sed laoreet odio elit semper lectus. Aliquam vel placerat ante. Curabitur nec velit interdum, viverra ipsum
+            ut, finibus
+            diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            <br>Nunc a urna quis nisi pulvinar aliquet. Nam elit turpis, posuere quis fringilla volutpat, convallis a
+            nibh. Praesent non
+            risus sed turpis luctus pulvinar finibus eget justo.
+            <br />Sed posuere varius lorem ut feugiat. Vivamus scelerisque ante ante, eu fringilla mauris scelerisque
+            in. Etiam imperdiet,
+            eros eu vulputate condimentum, risus ipsum luctus risus, quis eleifend purus enim eu nisl.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="interests-section" id="about-me">
+    <div class="container">
+      <h3>What drives my research?</h3>
+      <h2>SCIENTIFIC INTERESTS</h2>
+
+      <ul class="interests-list">
+
+        <li>
+          Sed vitae lacus eget ante suscipit blandit in sit amet dui. Duis id sagittis eros, quis luctus felis.
+        </li>
+
+        <li>
+          Nam imperdiet, dui ac luctus rutrum, turpis velit maximus quam, ut auctor massa massa eget neque. Sed sodales
+          sodales porttitor. Sed euismod eleifend nisi, eget tincidunt justo posuere ac.
+        </li>
+
+        <li>
+          Maecenas dignissim malesuada magna sit amet tincidunt. Nunc et enim a turpis aliquet ultrices. Curabitur felis
+          est,
+          scelerisque eu urna quis, feugiat euismod lacus. In et lacinia neque, sit amet sollicitudin augue.
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div>
+        <h3>What I can do?</h3>
+        <h2>SKILLS & PROFICIENCIES</h2>
+      </div>
+      <div class="container-skills">
+        <div class="skill-1">
+          <div>
+            <img src="./laptop.png" alt="laptop" class="symbol" />
+          </div>
+          <ul>
+            <li>Morbi placerat</li>
+            <li>mattis velit,</li>
+            <li>sit amet tincidunt velit.</li>
+          </ul>
+        </div>
+        <div class="skill-2">
+          <div>
+            <img src="./idea.png" alt="bulb" class="symbol" />
+          </div>
+          <ul>
+            <li>Curabitur suscipit vestibulum leo,</li>
+            <li>placerat vulputate lacus posuere eu.</li>
+          </ul>
+        </div>
+        <div class="skill-3" id="light">
+          <div>
+            <img src="./light.png" alt="light" class="symbol" />
+          </div>
+          <ul>
+            <li>Sed mollis interdum molestie.</li>
+            <li>Vivamus volutpat ligula eu nunc</li>
+            <li>
+              scelerisque tempus.
+            </li>
+          </ul>
+        </div>
+        <div class="skill-4">
+          <div>
+            <img src="./data.png" alt="notes" class="symbol" />
+          </div>
+          <ul>
+            <li>
+              Etiam dui velit, vestibulum id pretium id,
+            </li>
+            <li>laoreet eu quam.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h3>Where I studied?</h3>
+      <h2>MY EDUCATION</h2>
+      <div class="grid-container">
+        <div class="grid-1">
+          <img class="img-1" src="./supernova.jpg" alt="Supernova" />
+        </div>
+        <p class="years grid-2">2019 - 2023</p>
+        <div class="grid-3">
+          <h2 class="h2-pink">PhD, Physics</h2>
+          <h3>University, City, Country</h3>
+          <p>
+            <b>PhD thesis: Proin rutrum pretium justo ut dictum.</b>
+          </p>
+          <p>
+            <b>Activities and societies:</b> Duis vitae turpis in dolor posuere interdum. Quisque et lectus sodales,
+            blandit ex non, cursus elit. Nullam posuere
+            lorem nulla, eu ultricies dolor interdum nec.
+          </p>
+          <p>
+            <b>Research project:</b><i> Nunc egestas mauris metus, at venenatis mauris ornare vel. Sed quis lacus a sem
+              rutrum finibus. Nam sit amet rutrum
+              tellus. Quisque ac elit non ex dignissim feugiat.</i>
+          </p>
+        </div>
+        <p class="years grid-4">2011 - 2017</p>
+        <div class="grid-5">
+          <h2 class="h2-pink">Master's Degree in Physics</h2>
+          <h3>University, City, Country</h3>
+          <p>
+            <b>Master's thesis: Pellentesque id pulvinar diam. Aliquam nisi nisi, mollis id sagittis vel, consequat
+              sodales sem.</b>
+          </p>
+          <p>
+            <b>Activities and societies:</b> Donec bibendum lorem metus, nec tempus orci accumsan ut. Curabitur sit amet
+            condimentum ex.
+          </p>
+          <p>
+            <b>Research project:</b><i> Quisque vitae purus quis magna venenatis rutrum cursus eu nibh. Nunc aliquet at
+              nulla a mattis. Suspendisse vel erat ut
+              urna venenatis euismod.</i>
+          </p>
+        </div>
+      </div>
+
+      <h3 class="additional-title">Additional Courses</h3>
+      <ul class="additional-education">
+        <li>
+          <p class="years">Oct 2020</p>
+          Donec mollis non quam id placerat. Pellentesque a ultrices turpis. Duis non fringilla libero, vel pellentesque
+          libero.
+        </li>
+
+        <li>
+          <p class="years">Jul 2011</p>
+          Vivamus ultrices ipsum ut ultricies consectetur. Curabitur eu tortor et sapien malesuada gravida ut dignissim
+          metus.
+          Integer nec metus posuere, ornare nunc ut, mattis orci.
+        </li>
+
+        <li>
+          <p class="years">Aug 2009</p>
+          Suspendisse dolor odio, interdum sed sapien sed, tristique suscipit tortor. Aliquam vitae fermentum justo.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <h3>What I did?</h3>
+      <h2>MY EXPERIENCE</h2>
+      <div class="grid-container2">
+        <p class="years grid-11">2026 - 2024</p>
+        <div class="grid-12">
+          <h2 class="h2-pink">PostDoc Researcher/Higher research assistant</h2>
+          <h3>Institute</h3>
+          <p>
+            Nulla urna est, mattis in ex et, blandit commodo dui. Pellentesque ligula sem, viverra in lectus eget,
+            facilisis auctor
+            justo.
+          </p>
+          <p>
+            Donec ornare accumsan tellus, et vehicula neque pretium nec. Maecenas dignissim, est quis facilisis
+            elementum, felis
+            risus varius turpis, at commodo diam diam in lacus.
+          </p>
+          <p>Duis et est venenatis, faucibus ipsum sit amet, sagittis enim.</p>
+        </div>
+        <div class="grid-13">
+          <img class="img-1" src="./galaxy.jpg" alt="Galaxy" />
+        </div>
+        <p class="years grid-14">2024 - 2019</p>
+        <div class="grid-15">
+          <h2 class="h2-pink">PhD student/Research assistant</h2>
+          <h3>Institute</h3>
+          <p>
+            Ut bibendum erat ac fringilla ultricies. Sed ullamcorper cursus elit, eu ornare enim posuere eget.
+          </p>
+          <p>
+            Suspendisse magna metus, pellentesque in eleifend id, bibendum a leo.
+          </p>
+          <p>
+            Praesent felis tellus, ultrices et mollis non, tincidunt id metus. Vivamus ac dolor sodales, tempor libero
+            quis, tempor
+            nulla.
+          </p>
+
+        </div>
+      </div>
+  </section>
+
+  <section id="achievements">
+    <div class="container">
+      <h3>My achievements:</h3>
+      <h2>ARTICLES & CERTIFICATES</h2>
+      <div class="articles">
+
+        <a href="https://google.com" class="link art">
+          Vivamus et feugiat turpis. Proin sed felis ut risus aliquet volutpat. Class aptent taciti sociosqu ad litora
+          torquent
+          per conubia nostra, per inceptos himenaeos.</a>
+        <h5>
+          Journal · 2026
+        </h5>
+
+        <a href="
+https://google.com" class="link art">
+          Phasellus eu tellus et dolor lacinia ultricies et a risus.</a>
+        <h5>
+          Journal · 2025
+        </h5>
+
+        <a href="https://google.com" class="link art">
+          Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</a>
+        <h5>
+          Journal · 2025
+        </h5>
+
+        <a href="https://google.com" class="link art">
+          Aliquam erat volutpat. Duis viverra, sem sed aliquet fringilla, leo quam aliquam ex, ut bibendum justo neque
+          at neque.</a>
+        <h5>
+          Journal · 2022
+        </h5>
+      </div>
+
+      <h2>POPULARIZATION OF SCIENCE</h2>
+      <div class="articles">
+        <ul class="projects">
+          <h5>Etiam suscipit quis sapien eget ultricies. Cras ornare leo tempor nibh aliquam malesuada. Nunc bibendum ex
+            ex, a
+            hendrerit nisl laoreet at:</h5>
+          <li>“Nam vel sodales lorem, ac pellentesque justo.”, 2015</li>
+          <li>“Vivamus commodo erat et lectus iaculis, a congue quam finibus.”, 2015</li>
+          <li>“Proin a leo et nulla euismod vestibulum ut eu leo.”, 2014</li>
+          <br>
+          <h5>Suspendisse potenti. Proin consequat ac sem at congue. Praesent tristique elit a posuere aliquet. Donec
+            feugiat tempus
+            elit.</h5>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="awards-section">
+    <div class="container">
+      <h2>AWARDS & ACKNOWLEDGEMENTS</h2>
+      <ul class="awards-list">
+
+        <li>
+          <p class="years">Nov 2023</p>
+          Suspendisse potenti. Sed in maximus est.
+        </li>
+
+        <li>
+          <p class="years">Sep 2017</p>
+          Suspendisse tellus quam, fermentum non vestibulum id, viverra sit amet ex.
+        </li>
+
+        <li>
+          <p class="years">Apr 2013</p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <section id="contact">
+      <div class="container footer">
+        <div class="side-menu">
+          <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a class="offer-link" href="/offer.html">O F F E R</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 id="contact">John Doe</h3>
+          <a id="mail" href="mailto:john.doe@mail.com">CONTACT ME</a>
+          <h5>john.doe@mail.com</h5>
+
+          <div class="buttons">
+            <button class="button">
+              <a href="https://www.linkedin.com/">
+                LinkedIn</a>
+            </button>
+
+            <button class="button">
+              <a href="https://www.researchgate.net/">Researchgate</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© 2026 CodingwithLucy. All rights reserved.</p>
+      <p id="footer-link">Graphics generated in Canva Pro or my own.
+      </p>
+    </section>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("myTopnav");
+      nav.classList.toggle("responsive");
+    }
+
+    document.addEventListener("click", function (event) {
+      const nav = document.getElementById("myTopnav");
+      const isClickInside = nav.contains(event.target);
+
+      if (!isClickInside && nav.classList.contains("responsive")) {
+        nav.classList.remove("responsive");
+      }
+    });
+  </script>
+
+</body>
+
+</html>
