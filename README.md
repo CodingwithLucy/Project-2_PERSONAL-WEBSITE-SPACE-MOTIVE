@@ -3,6 +3,10 @@
 A modern, responsive two-page website built to present a professional profile and a dedicated consulting offer with clarity, elegance, and high performance.
 The project focuses on clean structure, smooth user experience, and visually cohesive design across both pages.
 
+# Open here -->
+
+https://codingwithlucy.github.io/Project-2_PERSONAL-WEBSITE-SPACE-MOTIVE/
+
 ## ✨ Key Features:
 
 - **Fully Responsive Design:** Seamless experience across mobile, tablet, and desktop devices.
