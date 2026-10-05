@@ -17,10 +17,17 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   background-color: var(--white);
   margin: 0;
 }
+
+/*ACTIVITY OF SECOND OFFER WEBSITE*/
+/*.offer-link {
+  pointer-events: none;
+  opacity: 0.4;
+  cursor: default;
+}*/
 
 .container {
   margin: 0 auto;
@@ -30,7 +37,7 @@ body {
 }
 
 #main-background {
-  background: center url("./cosmos.jpg") no-repeat;
+  background: center url('./earth.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -77,14 +84,16 @@ body {
   padding: 10px 20px;
   border-radius: 8px;
   transition: all 0.3s ease;
+  font-family: inherit;
 }
 
 .topnav .icon {
   display: block;
   font-size: 2rem;
   cursor: pointer;
-  padding: 10px;
-  color: white;
+  padding: 10px 20px;
+  color: var(--white);
+  text-shadow: 0 0 10px var(--galaxy-blue);
 }
 
 .topnav.responsive {
@@ -104,13 +113,9 @@ body {
 
 .topnav.responsive a {
   display: block;
-  width: 100%;
-  padding: 12px 0;
+  padding: 12px 20px;
   text-align: left;
-}
-
-.topnav.responsive .icon {
-  align-self: flex-end;
+  font-family: inherit;
 }
 
 .topnav a:hover {
@@ -122,15 +127,12 @@ body {
   -webkit-backdrop-filter: blur(12px);
   transform: scale(1.05);
   transition: all 0.3s ease;
-}
-
-.topnav .icon {
-  color: var(--white);
-  text-shadow: 0 0 10px var(--galaxy-blue);
+  padding: 10px 20px;
 }
 
 .topnav.responsive .icon {
   color: var(--white);
+  align-self: flex-end;
 }
 
 .topnav .icon:hover {
@@ -156,25 +158,25 @@ h1 {
 
 #h2 {
   color: var(--lightblue);
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 0;
-  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.75);
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.75);
 }
 
 h2 {
   color: var(--blue);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  margin: 4rem 0 2rem 0;
+  margin: 2rem 0 3rem 0;
 }
 
 h3 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--darkblue);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-style: italic;
   font-weight: 500;
   line-height: normal;
@@ -219,6 +221,7 @@ h3 {
 .button > a {
   color: var(--galaxy-blue);
   text-decoration: none;
+  font-family: inherit;
 }
 
 .button:hover,
@@ -262,7 +265,6 @@ h3 {
 
 .container-about-photo .photo {
   width: 100%;
-  height: 350px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(159, 220, 255, 0.3);
@@ -282,18 +284,14 @@ h3 {
 }
 
 .about-note {
-  font-size: 1.2rem;
-  padding: 3%;
+  font-size: 1rem;
+  padding: 5%;
   line-height: 1.5;
-  background-color: var(--lightgrey);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+  background-color: rgba(12, 28, 45, 0.85);
+  box-shadow: 0 0 20px rgba(12, 28, 45);
   line-height: 1.75;
-  background: linear-gradient(
-    135deg,
-    rgba(12, 28, 45, 0.6),
-    rgba(100, 80, 150, 0.4)
-  );
   color: var(--white);
+  margin: 0;
 }
 
 .interests-list {
@@ -306,7 +304,6 @@ h3 {
 
 .interests-list li {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
 }
 
 .skills-section {
@@ -339,7 +336,6 @@ ul {
   align-items: center;
   flex-direction: row;
   background-color: var(--white);
-  font-size: 1rem;
   padding: 1%;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
   line-height: 1.5;
@@ -363,7 +359,6 @@ ul {
   flex-direction: row;
   border: 0.25rem solid var(--white);
   background-color: transparent;
-  font-size: 1rem;
   padding: 1%;
   color: var(--white);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
@@ -381,7 +376,7 @@ ul {
 
 .h2-pink {
   color: var(--purple);
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 1% 0;
 }
 
@@ -393,7 +388,7 @@ ul {
 }
 
 .years {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -526,7 +521,7 @@ li {
 }
 
 .art {
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -535,6 +530,7 @@ li {
 a {
   text-decoration: none;
   color: var(--grey);
+  font-family: inherit;
 }
 
 a:hover,
@@ -553,7 +549,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 600;
   line-height: normal;
@@ -568,7 +564,7 @@ h4 {
 }
 
 .projects li {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0.5rem 0rem;
   list-style: decimal;
   font-weight: 500;
@@ -639,7 +635,7 @@ h4 {
 }
 
 #footer-link {
-  color: var(--galaxy-purple);
+  color: var(--lightgrey);
   font-weight: 400;
   padding-right: 50px;
   font-size: 0.75rem;
@@ -656,7 +652,7 @@ h4 {
 
 footer {
   font-size: 1rem;
-  background: center url("./milkyway.jpg") no-repeat;
+  background: center url('./milkyway.jpg') no-repeat;
   background-size: cover;
   margin: 0 auto;
   padding-top: 100px;
@@ -685,6 +681,7 @@ footer {
 .side-menu a {
   color: white;
   line-height: 1.5;
+  font-family: inherit;
 }
 
 footer .side-menu a:hover {
@@ -711,7 +708,7 @@ footer .copyright {
 
   #h2,
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #quote > * {
@@ -719,8 +716,8 @@ footer .copyright {
   }
 
   .symbol {
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
   }
 
   .img-1 {
@@ -743,32 +740,21 @@ footer .copyright {
 
   .topnav a {
     display: block;
-    color: white;
+    font-family: inherit;
+    padding: none;
+    padding-inline: max(10px, 1.5vw);
+    font-size: 0.9rem;
   }
 
   .topnav .icon {
     display: none;
   }
 
-  .topnav a {
-    font-size: 1.2rem;
-  }
-
   h1 {
     font-size: 6rem;
   }
 
-  #h2,
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-  }
-
   #quote > * {
-    font-size: 1.25rem;
     width: 80%;
   }
 
@@ -799,9 +785,8 @@ footer .copyright {
   }
 
   .container-about-note {
-    flex: 1;
+    flex: 2;
     display: flex;
-    align-items: center;
   }
 
   .container-skills {
@@ -836,12 +821,12 @@ footer .copyright {
 
   .h2-pink {
     color: var(--purple);
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 1% 0;
   }
 
   .years {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .additional-education li {
@@ -858,21 +843,12 @@ footer .copyright {
     padding: 0;
   }
 
-  p,
-  li {
-    font-size: 1.2rem;
-  }
-
   .art {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   h4 {
     font-size: 1.75rem;
-  }
-
-  h5 {
-    font-size: 1.25rem;
   }
 
   .awards-list li {
@@ -893,11 +869,6 @@ footer .copyright {
     font-size: 1.5rem;
   }
 
-  .symbol {
-    height: 8rem;
-    width: 8rem;
-  }
-
   .container.footer {
     flex-direction: row;
     justify-content: space-between;
@@ -909,8 +880,11 @@ footer .copyright {
     max-width: 1200px;
   }
 
+  .topnav a {
+    font-size: 1rem;
+  }
+
   #quote > * {
-    font-size: 1.25rem;
     width: 70%;
   }
 
@@ -943,7 +917,7 @@ footer .copyright {
 
 /*STYLES OFFER.HTML*/
 .offer-page #main-background {
-  background: center url("./earth.jpg") no-repeat;
+  background: center url('./cosmos.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -965,7 +939,7 @@ footer .copyright {
 }
 
 .offer-section h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 10px;
@@ -1064,6 +1038,20 @@ footer .copyright {
   color: var(--galaxy-blue);
 }
 
+.service-extra {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.service-extra h4 {
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+  color: var(--blue);
+}
+
+.service-extra p {
+  margin-bottom: 18px;
+}
+
 #process {
   background: rgba(159, 220, 255, 0.25);
 }
@@ -1077,7 +1065,7 @@ footer .copyright {
 }
 
 .timeline::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 20px;
   top: 0;
@@ -1249,10 +1237,11 @@ i.fa {
   cursor: pointer;
   position: relative;
   font-weight: 600;
+  font-family: inherit;
 }
 
 .faq-question::after {
-  content: "+";
+  content: '+';
   position: absolute;
   right: 20px;
   font-size: 1.4rem;
@@ -1306,7 +1295,7 @@ i.fa {
 }
 
 .testimonial-item::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -15px;
   left: 200px;
@@ -1354,7 +1343,7 @@ i.fa {
   }
 
   .timeline::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 5%;
     left: 0;
